@@ -6,7 +6,7 @@ int main()
     printf("enter two numbers");
     scanf("%d%d",&n1,&n2);
     b=sum(n1,n2);
-    printf("sum=%d",b);
+    printf("sumof %d and %d is %d",b);
     return (0);
 }
 int sum(int n1,int n2)
