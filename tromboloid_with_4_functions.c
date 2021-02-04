@@ -3,7 +3,7 @@
 float input()
 {
     float h; 
-    printf("Enter a value\n");
+    printf("Enter a value of height,depth,breadth respectively\n");
     scanf("%f",&h);
     return h;
 }
@@ -17,7 +17,7 @@ float find_volume(float h, float d, float b)
 
 void output(float h, float d, float b,float volume)
 {
-    printf("volume of tromboloid with values %f,%f,%f is %f",h,d,b,volume);
+    printf("volume of tromboloid with height=%f,depth=%f,breadth=%f is %f",h,d,b,volume);
 }
 
 float main()
