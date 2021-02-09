@@ -10,9 +10,9 @@ typedef struct point Point;
 Point input()
 {
     Point p;
-    printf("Enter abscissa of point1 and point2 respectively ");
+    printf("Enter abscissa  ");
     scanf("%f",&p.x);
-    printf("Enter ordinate of point1 and point2 respectively ");
+    printf("Enter ordinate ");
     scanf("%f",&p.y);
     return p;
 }
