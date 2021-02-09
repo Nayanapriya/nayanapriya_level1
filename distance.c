@@ -24,6 +24,7 @@ float compute(float x1, float y1, float x2, float y2)
 float output(float x1,float y1,float x2,float y2,float d)
 {
     printf("The distance between (%f,%f)and (%f,%f) is %f\n",x1,y1,x2,y2,d);
+    return d;
 }
 
 
@@ -36,5 +37,6 @@ float main()
     y2=input();
     d=compute(x1,y1,x2,y2);
     output(x1,y1,x2,y2,d);
+    return 0;
     
 }
