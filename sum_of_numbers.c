@@ -4,7 +4,7 @@
 int input()
 {
     int a;
-    printf("Enter a number\n");
+    printf("Enter the  number of elements to be added\n");
     scanf("%d",&a);
     return a;
 }
@@ -30,7 +30,7 @@ int compute(int n, int a[n])
 int output( int sum)
 {
     int i;
-    printf("The sum of elements =%d ",sum); 
+    printf("The sum of different elements =%d ",sum); 
     return sum;
    
 }
