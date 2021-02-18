@@ -14,12 +14,16 @@ fraction input()
 float compute(fraction f1,fraction f2)
 {
     float sum;
+    int numerator,denominator;
     sum=(((f1.num*f2.den)+(f2.num*f1.den))/(f1.den*f2.den));
+    numerator=((f1.num*f2.den)+(f2.num*f1.den));
+    denominator=(f1.den*f2.den);
+    printf("The addition of %f/%f and %f/%f in fraction form is %d/%d ",f1.num,f1.den,f2.num,f2.den,numerator,denominator);
     return sum;
 }
-void output(fraction f1,fraction f2,float sum,float numerator,float denominator)
+void output(float sum)
 {
-    printf("The addition of %f/%f and %f/%f in float form is %f and in fraction form is %f/%f",f1.num,f1.den,f2.num,f2.den,sum,numerator,denominator);
+    printf("and the simplified form is %f",sum);
     
 }
 int main()
@@ -30,9 +34,8 @@ int main()
     f1=input();
     f2=input();
     sum=compute(f1,f2);
-    numerator=(f1.num*f2.den)+(f2.num*f1.den);
-    denominator=(f1.den*f2.den);
-    output(f1,f2,sum,numerator,denominator);
+    
+    output(sum);
     return 0;
     
 }
