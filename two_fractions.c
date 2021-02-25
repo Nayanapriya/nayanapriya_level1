@@ -11,17 +11,13 @@ fraction input()
     scanf("%d%d",&f.num,&f.den);
     return f;
 }
-int gcd(int x,int y)
+int gcd(int a,int b)
 {
-    while(x!=y)
+    if(a==0)
     {
-        if(x>y)
-            x=x-y;
-        else
-            y=y-x;
-        
+        return b;
     }
-    return x;
+    return gcd(b%a,a);
 }
 
 fraction compute(fraction f1,fraction f2)
