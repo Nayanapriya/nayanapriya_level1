@@ -68,8 +68,7 @@ void input_m_timecards(int m,timecards t[m])
 }
 payroll compute(int m,timecards t[m], payroll p)
 {
-    //printf("\n%s  %s  %d",p->names,t1->tc_name,t1->tot_minutes);
-    //printf("%s %d\n",t->tc_name,t->tot_minutes);
+   
     p.min_worked=0;
     for(int i=0;i<m;i++)
     {
@@ -84,39 +83,18 @@ payroll compute(int m,timecards t[m], payroll p)
     else
         {p.gross_pay=40*p.hr_wage+(p.hrs_worked-40)*1.5*p.hr_wage;}
     return p;
-    /*int sum=0;
-    if(strcmp(t1->tc_name,t2->tc_name)==0)
-    {  
-        //printf("\n%d",t1->tot_minutes);
-        //sum=t1->tot_minutes+t2->tot_minutes;
-        printf("\n%d %d",t1->tot_minutes,t2->tot_minutes);
-        sum=sum+t1->tot_minutes;
-        //res+=sum;
-    }*/
+    
    
 }
 void compute_n_values(int n, int m, timecards t[m],payroll p[n])
 {
-    //printf("\nThe number of time cards: ");
-    //printf("%d",p->no_tc);
+   
     for(int i=0; i<n; i++)
     {
     	p[i]=compute(m,t,p[i]);
     }
 }
-/*void display (timecards *t)
-{
-    printf("%s %d\n",t->tc_name,t->tot_minutes);
-}
-void display_n_values(int n,payroll p[n])
-{
-    printf("\nThe number of time cards: ");
-    printf("%d",p->no_tc);
-    for(int i=0; i<p->no_tc; i++)
-    {
-    	display(&p->t[i]);
-    }
-}*/
+
 void output(payroll *p)
 {
     printf("\n%s: %.2f hours,$%.2f",p->names,p->hrs_worked,p->gross_pay);
