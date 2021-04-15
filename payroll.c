@@ -10,8 +10,7 @@ typedef struct
 {
 	char names[10];
 	float hr_wage;
-	//int no_tc;
-	//timecards t[10];
+	
 	float hrs_worked;
 	float min_worked;
 	float total_time;
